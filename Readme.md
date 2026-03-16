@@ -9,7 +9,7 @@ Everything listed here is a suggestion. Make sure you check your journal's submi
 
 ## Text
 
-- Check for non-ASCII characters (e.g. Umlaute) using a regex search: `[^\\x00-\\x7F]`.
+- Check for non-ASCII characters (e.g. Umlaute) using a regex search: `[^\x00-\x7F]`.
 - Instead of using `/` in running text, use `\slash`.
 - For underscores in text, use `\_`.
 - Make sure your hyperlinks do not break across lines.
@@ -97,7 +97,7 @@ Everything listed here is a suggestion. Make sure you check your journal's submi
 
 ## Bibliography
 
-- Check for non‑ASCII characters via regex search: `[^\\x00-\\x7F]`.
+- Check for non‑ASCII characters via regex search: `[^\x00-\x7F]`.
 - Do **not** put a link in the DOI field, only the identifier itself, for example: `doi = {10.1000/182}`.
 - Check for unused citations with checkcites.lua: https://github.com/islandoftex/checkcites.
   [Some systems require placing the script directly in the working folder.]
