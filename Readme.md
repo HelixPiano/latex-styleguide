@@ -17,7 +17,7 @@ Everything listed here is a suggestion. Make sure you check your journal's submi
 - If there is a capital letter preceding a sentence-ending period you have to add an `\@` so that LaTeX does not treat it as an abbreviation. Example: `...Pentium III\@. This...`. Regex search for `[A-Z]\.`[\[5\]](#5)
 - Ensure that acronyms are defined only once and before they are used. Avoid acronyms for terms that appear only once.
 - For single quotation marks, use `` `text'``. American English uses double quotation marks as the default; British English uses single quotation marks, reserving double quotation marks for quotations within quotations. If the journal allows additional packages use `csquotes` to handle everything automatically for you.
-- Ranges require an en dash (`--` in LaTeX) with no spaces between start and end (e.g. `1--10`, `Jan--Feb`).
+- Ranges require an en dash (`--` in LaTeX) with no spaces between start and end (e.g. `1--10`, `Jan--Feb`, `1961--1990`).
 - Check for double spaces.
 - Check for missing or extra braces, especially in long paragraphs.
 - Use `Section~\ref{sec:...}` or `Sect.~\ref{sec:...}` depending on journal.
@@ -45,12 +45,14 @@ Everything listed here is a suggestion. Make sure you check your journal's submi
 - For single-line display math, use `\[ ... \]` instead of `$$...$$`.
 - Use `\left` and `\right` to scale brackets.
 - Use native LaTeX commands like `\sin`.
+- Copernicus Guidelines: "In the text, equations should be referred to by the abbreviation "Eq." and the respective number in parentheses, e.g. "Eq. (14)". However, when the reference comes at the beginning of a sentence, the unabbreviated word "Equation" should be used [...]".
 
 ## Units
 
 - Coordinates need a degree sign and a space when naming the direction (e.g. `30$^{\circ}$~N`).
 - Spaces must be included between number and unit (e.g. 1 %, 1 m) [There is no consensus on whether to include a space before the percent sign in English].
 - Units must be written exponentially (e.g. W m<sup>–2</sup>).
+- [Wikipedia on ranges with units](https://en.wikipedia.org/wiki/Dash#En_dash): Some style guides [...] recommend that, when a number range might be misconstrued as subtraction, the word "to" should be used instead of an en dash. For example, "a voltage of 50 V to 100 V" is preferable to using "a voltage of 50–100 V". Relatedly, in ranges that include negative numbers, "to" is used to avoid ambiguity or awkwardness (for example, "temperatures ranged from −18 °C to −34 °C").
 - Common abbreviations to be applied: hour as h (not hr), kilometre as km, metre as m.
 - Journals have different guidelines for units. Some have their own command; otherwise use siunitx if additional packages are allowed. There you can write 10 km h<sup>–1</sup> via `\qty{10}{\kilo\metre\per\hour}`.
 - SI base units and SI‑accepted units must be abbreviated in conjunction with numbers (e.g. the velocity is 10 km h<sup>–1</sup>) and must be written out without numbers (e.g. the velocity is given in kilometres per hour).
@@ -61,10 +63,12 @@ Everything listed here is a suggestion. Make sure you check your journal's submi
   `\externaldocument[sup-]{supplemental_material}`.  
   This means that in `main.tex` you must change references from `\ref{fig:x}` to `\ref{sup-fig:x}`.
 
-- Use these commands to add an "S" to the figures, tables, and sections in the supplementary material:  
+- Use these commands to add an "S" to the figures, tables, and sections in the supplementary material:
+  `\makeatletter`
   `\renewcommand\thesection{S\@arabic\c@section}`  
   `\renewcommand\thetable{S\@arabic\c@table}`  
   `\renewcommand\thefigure{S\@arabic\c@figure}`
+  `\makeatother`
 
 ## Figures and tables
 
