@@ -63,11 +63,11 @@ Everything listed here is a suggestion. Make sure you check your journal's submi
   `\externaldocument[sup-]{supplemental_material}`.  
   This means that in `main.tex` you must change references from `\ref{fig:x}` to `\ref{sup-fig:x}`.
 
-- Use these commands to add an "S" to the figures, tables, and sections in the supplementary material:
-  `\makeatletter`
+- Use these commands to add an "S" to the figures, tables, and sections in the supplementary material:  
+  `\makeatletter`  
   `\renewcommand\thesection{S\@arabic\c@section}`  
   `\renewcommand\thetable{S\@arabic\c@table}`  
-  `\renewcommand\thefigure{S\@arabic\c@figure}`
+  `\renewcommand\thefigure{S\@arabic\c@figure}`  
   `\makeatother`
 
 ## Figures and tables
