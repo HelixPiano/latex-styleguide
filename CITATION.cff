@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this guideline, please cite it as below."
+authors:
+- family-names: "Heinrich"
+  given-names: "Philipp"
+  orcid: "https://orcid.org/0009-0005-8887-3141"
+title: "LaTeX guideline for your scientific manuscript"
+version: 1.0.0
+doi: 10.5281/zenodo.19068947
+date-released: 2026-03-17
+url: "https://github.com/HelixPiano/latex-styleguide"
+license: CC-BY-4.0
+keywords:
+  - LaTeX
+  - "Scientific Writing"
+  - "Manuscript Preparation"
+  - "Academic Publishing"
+  - "Best Practices"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19068947
+    description: "The specific version DOI for this manuscript guideline."
