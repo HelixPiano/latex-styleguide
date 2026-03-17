@@ -1,6 +1,6 @@
 # LaTeX guideline for your scientific manuscript
 Author: Philipp Heinrich  
-ORCID: 0009-0005-8887-3141
+ORCID: 0009-0005-8887-3141  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19068947.svg)](https://doi.org/10.5281/zenodo.19068947)
 
 This document contains information, tips, and guidelines that I collected while working on various LaTeX files for scientific manuscripts. It may give you some ideas on what to look out for when creating your own manuscript. The information provided here has been taken from all sorts of documents and forum posts.
